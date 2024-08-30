@@ -1,0 +1,147 @@
+/* Déclaration de la police avec @font-face */
+@font-face {
+    font-family: "Paris2024 Semibold";
+    src: url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.eot");
+    src: url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/b84eb26a3af45db5af2689f71b93b580.svg#Paris2024 Semibold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Paris2024 Semibold', Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    position: relative; /* Nécessaire pour positionner les images en absolu par rapport au corps */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title-main {
+    font-family: 'Paris2024 Semibold', sans-serif;
+    font-size: 2.5rem;
+    margin: 0 20px;
+}
+
+.title-image-left {
+    position: absolute;
+    top: 40px; /* Ajuste cette valeur pour descendre l'image de gauche */
+    left: 70px;
+    width: 140px;
+    height: auto;
+}
+
+.title-image-right {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    width: 150px;
+    height: auto;
+}
+
+.title-paris {
+    text-align: center;
+    font-family: 'Paris2024 Semibold', sans-serif;
+    font-size: 4rem;
+    margin-top: 18px; /* Remonte le titre de 20 pixels */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate; /* Change de collapse à separate pour appliquer border-radius */
+    border-spacing: 0; /* Supprime l'espace entre les cellules */
+    border-radius: 20px; /* Arrondit les coins du tableau */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; /* Assure que les coins arrondis s'appliquent également aux lignes du tableau */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    width: 50px;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    width: 40px;
+}
+
+td:nth-child(3), th:nth-child(3) {
+    width: 110px;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 50px;
+}
+
+td:nth-child(5), th:nth-child(5) {
+    width: 50px;
+}
+
+td:nth-child(6), th:nth-child(6) {
+    width: 50px;
+}
+
+td:nth-child(7), th:nth-child(7) {
+    width: 50px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Paris2024 Semibold', sans-serif; /* Applique la police de caractère */
+    font-size: 0.9rem;
+    color: #333; /* Couleur du texte */
+    text-align: center;
+}
+
+/* Ajout d'une marge spécifique pour le texte d'update */
+#last-updated {
+    margin: 0;
+}
+
+/* Style pour le total des médailles en gras avec la police Paris2024 Semibold, taille de police plus grande et couleur dorée */
+.total-medals {
+    font-family: 'Paris2024 Semibold', sans-serif;
+    font-size: 1.2rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    color: #d7c47b; /* Couleur dorée */
+}
+
+/* Styles pour les colonnes Or, Argent et Bronze en gras avec la police Paris2024 Semibold */
+.country-name, .rank-number, .gold-medals, .silver-medals, .bronze-medals {
+    font-family: 'Paris2024 Semibold', sans-serif;
+    font-size: 1.2rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
